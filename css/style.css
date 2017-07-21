@@ -6,6 +6,7 @@
     --base-color: #DDDDDD;
     --sub-color:  #ffffff;
     --accent-color: #336666;
+    --accent-ho-color: #2F9A9A;
 }
 /*配色理由
 参考サイト:http://iso-labo.com/labo/web_color_mix.html
@@ -108,8 +109,8 @@ section h2,
 .button-contact:hover,
 .button-contact:active
 {
-    color: #fff;
-    background-color: #4c4c4c;
+    /*color: #fff;*/
+    background-color: #aaa;
 }
 
 header .profile
@@ -215,6 +216,8 @@ section h2
 {
     padding-bottom: 0;
 }
+
+
 #works h2
 {
     margin-bottom: 50px;
@@ -224,6 +227,10 @@ section h2
     float: left;
     width: 33.33333%;
     height: 100%;
+}
+
+#ilast_meishi {
+  height: calc(50vh - 100px);
 }
 
 #works .works-box a
@@ -264,6 +271,8 @@ section h2
     display: block;
     margin-bottom: 15px;
 }
+
+
 #works .works-box a .works-box-inner .button-readmore
 {
     font-size: 1rem;
@@ -277,11 +286,11 @@ section h2
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
-    background-color: #14c0c9;
+    background-color: var(--accent-color);
 }
 #works .works-box a .works-box-inner .button-readmore:hover
 {
-    background-color: #0f949b;
+    background-color: var(--accent-ho-color);
 }
 #works .works-box a:hover .works-box-inner
 {
@@ -326,6 +335,7 @@ section h2
 {
     font-size: 3.2rem;
 }
+
 #contact ul .github i
 {
     margin-left: 2px;
@@ -334,6 +344,11 @@ section h2
 #contact ul .phone i
 {
     margin-top: 12px;
+}
+#contact ul .mail i
+{
+    margin-left: 2px;
+    margin-top: 10px;
 }
 
 #contact ul a
@@ -345,11 +360,11 @@ section h2
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    background-color: var(--accent-color);　/*コネクトアイコン*/
+    background-color: var(--accent-color);　/*コンタクトアイコン*/
 }
 #contact ul a:hover
 {
-    background-color: #0f949b;
+    background-color: var(--accent-ho-color); /*コンタクトアイコン　マウスオーバー*/
 }
 
 footer
